@@ -8,7 +8,11 @@ I couldn't find a implementation of the "Bad Apple" in ROS2, so i created one ou
     ```bash
     cd ~/ros2_ws/src
     git clone https://github.com/kyavuzkurt/bad_apple_ros2.git
-    cd ..
+    ```
+
+2. **Build the package**
+    ```bash
+    cd ~/ros2_ws
     colcon build --packages-select bad_apple
     ```
 
@@ -26,6 +30,8 @@ I couldn't find a implementation of the "Bad Apple" in ROS2, so i created one ou
 2. **Run the ROS2 node**
     Run the launch file to start the ASCII animation on a full screen terminal.
     ```bash
+    cd ~/ros2_ws 
+    source install/setup.bash 
     ros2 launch bad_apple bad_apple.launch.py
     ```
 
